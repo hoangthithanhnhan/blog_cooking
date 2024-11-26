@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/thembaiviet.css">
 </head>
 <body>
     <header class="header">
@@ -29,59 +30,39 @@
                     <div class="side-bar d-flex flex-column flex-shrink-0 p-3" style="width: 280px;">
                         <ul class="nav nav-pills flex-column mb-auto">
                             <li class="nav-item">
-                                <a href="#" class="nav-link active" aria-current="page">
-                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>Trang chủ
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>Trang chủ
                                 </a>
-                                <hr>
                             </li>
                             <li>
                                 <a href="#" class="nav-link text-white">
-                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                                    Thêm bài viết
+                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>Thêm bài viết
                                 </a>
-                                <hr>
                             </li>
                             <li>
                                 <a href="#" class="nav-link text-white">
-                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                                    Thông báo
+                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>Thông báo
                                 </a>
-                                <hr>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link active">
+                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>Quản lý bài viết
+                                </a>
                             </li>
                             <li>
                                 <a href="#" class="nav-link text-white">
-                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                                    Quản lý bài viết
+                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>Bài viết đã lưu
                                 </a>
-                                <hr>
                             </li>
                             <li>
                                 <a href="#" class="nav-link text-white">
-                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                                    Bài viết đã lưu
-                                </a>
-                                <hr>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link text-white">
-                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                                    Đăng xuất
+                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>Đăng xuất
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="tags">
-                        <button type="button" class="btn btn-outline-success">Món chính</button>
-                        <button type="button" class="btn btn-outline-success">Món khai vị</button>
-                        <button type="button" class="btn btn-outline-success">Món tráng miệng</button>
-                        <button type="button" class="btn btn-outline-success">Món ăn vặt</button>
-                        <button type="button" class="btn btn-outline-success">Món Âu</button>
-                        <button type="button" class="btn btn-outline-success">Món Hàn</button>
-                        <button type="button" class="btn btn-outline-success">Món Thái</button>
-                        <button type="button" class="btn btn-outline-success">Món nướng</button>
-                    </div>
                     <div class="row d-flex flex-wrap">
                         <div class="col-6 post">
                             <div class="card mb-3">
@@ -92,10 +73,21 @@
                                     <p class="card-text user_post">Nguyet Anh</p>
                                     <p class="card-text"><small class="text-muted date_posted">26/11/2024</small></p>
                                     <div class="button-interact">
-                                        <button class="like button-"><img src="../assets/images/like.png" alt=""></button>
-                                        <button class="comment"><img src="../assets/images/comment.png" alt=""></button>
-                                        <button class="save"><img src="../assets/images/save.png" alt=""></button>
-                                        <button class="report"><img src="../assets/images/report.png" alt=""></button>
+                                        <button class="like button-">
+                                            <img src="../assets/images/like.png" alt="">
+                                        </button>
+                                        <button class="comment">
+                                            <img src="../assets/images/comment.png" alt="">
+                                        </button>
+                                        <button class="save">
+                                            <img src="../assets/images/save.png" alt="">
+                                        </button>
+                                        <button class="edit">
+                                            <img src="../assets/images/edit.png" alt="">
+                                        </button>
+                                        <button class="delete">
+                                            <img src="../assets/images/delete.png" alt="">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -106,13 +98,24 @@
                                 <div class="card-body">
                                     <a class="card-title title_post">Hướng dẫn làm tôm sốt trái thơm độc đáo và hấp dẫn cho gia đình
                                     </a>
-                                    <p class="card-text user_post">Hoa Thi</p>
+                                    <p class="card-text user_post">Nguyet Anh</p>
                                     <p class="card-text"><small class="text-muted date_posted">26/11/2024</small></p>
                                     <div class="button-interact">
-                                        <button class="like button-"><img src="../assets/images/like.png" alt=""></button>
-                                        <button class="comment"><img src="../assets/images/comment.png" alt=""></button>
-                                        <button class="save"><img src="../assets/images/save.png" alt=""></button>
-                                        <button class="report"><img src="../assets/images/report.png" alt=""></button>
+                                        <button class="like button-">
+                                            <img src="../assets/images/like.png" alt="">
+                                        </button>
+                                        <button class="comment">
+                                            <img src="../assets/images/comment.png" alt="">
+                                        </button>
+                                        <button class="save">
+                                            <img src="../assets/images/save.png" alt="">
+                                        </button>
+                                        <button class="edit">
+                                            <img src="../assets/images/edit.png" alt="">
+                                        </button>
+                                        <button class="delete">
+                                            <img src="../assets/images/delete.png" alt="">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -123,13 +126,24 @@
                                 <div class="card-body">
                                     <a class="card-title title_post">Hướng dẫn làm mực ngào có vị ớt cay nồng, đậm đà và hấp dẫn cho mọi thực khách
                                     </a>
-                                    <p class="card-text user_post">Pham Anh</p>
+                                    <p class="card-text user_post">Nguyet Anh</p>
                                     <p class="card-text"><small class="text-muted date_posted">26/11/2024</small></p>
                                     <div class="button-interact">
-                                        <button class="like button-"><img src="../assets/images/like.png" alt=""></button>
-                                        <button class="comment"><img src="../assets/images/comment.png" alt=""></button>
-                                        <button class="save"><img src="../assets/images/save.png" alt=""></button>
-                                        <button class="report"><img src="../assets/images/report.png" alt=""></button>
+                                        <button class="like button-">
+                                            <img src="../assets/images/like.png" alt="">
+                                        </button>
+                                        <button class="comment">
+                                            <img src="../assets/images/comment.png" alt="">
+                                        </button>
+                                        <button class="save">
+                                            <img src="../assets/images/save.png" alt="">
+                                        </button>
+                                        <button class="edit">
+                                            <img src="../assets/images/edit.png" alt="">
+                                        </button>
+                                        <button class="delete">
+                                            <img src="../assets/images/delete.png" alt="">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -143,10 +157,21 @@
                                     <p class="card-text user_post">Nguyet Anh</p>
                                     <p class="card-text"><small class="text-muted date_posted">26/11/2024</small></p>
                                     <div class="button-interact">
-                                        <button class="like button-"><img src="../assets/images/like.png" alt=""></button>
-                                        <button class="comment"><img src="../assets/images/comment.png" alt=""></button>
-                                        <button class="save"><img src="../assets/images/save.png" alt=""></button>
-                                        <button class="report"><img src="../assets/images/report.png" alt=""></button>
+                                        <button class="like button-">
+                                            <img src="../assets/images/like.png" alt="">
+                                        </button>
+                                        <button class="comment">
+                                            <img src="../assets/images/comment.png" alt="">
+                                        </button>
+                                        <button class="save">
+                                            <img src="../assets/images/save.png" alt="">
+                                        </button>
+                                        <button class="edit">
+                                            <img src="../assets/images/edit.png" alt="">
+                                        </button>
+                                        <button class="delete">
+                                            <img src="../assets/images/delete.png" alt="">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -157,13 +182,24 @@
                                 <div class="card-body">
                                     <a class="card-title title_post">Hướng dẫn làm kem Cherry thơm ngon, mát lạnh cho mùa hè
                                     </a>
-                                    <p class="card-text user_post">Thanh Nhan</p>
+                                    <p class="card-text user_post">Nguyet Anh</p>
                                     <p class="card-text"><small class="text-muted date_posted">26/11/2024</small></p>
                                     <div class="button-interact">
-                                        <button class="like button-"><img src="../assets/images/like.png" alt=""></button>
-                                        <button class="comment"><img src="../assets/images/comment.png" alt=""></button>
-                                        <button class="save"><img src="../assets/images/save.png" alt=""></button>
-                                        <button class="report"><img src="../assets/images/report.png" alt=""></button>
+                                        <button class="like button-">
+                                            <img src="../assets/images/like.png" alt="">
+                                        </button>
+                                        <button class="comment">
+                                            <img src="../assets/images/comment.png" alt="">
+                                        </button>
+                                        <button class="save">
+                                            <img src="../assets/images/save.png" alt="">
+                                        </button>
+                                        <button class="edit">
+                                            <img src="../assets/images/edit.png" alt="">
+                                        </button>
+                                        <button class="delete">
+                                            <img src="../assets/images/delete.png" alt="">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -177,10 +213,21 @@
                                     <p class="card-text user_post">Nguyet Anh</p>
                                     <p class="card-text"><small class="text-muted date_posted">26/11/2024</small></p>
                                     <div class="button-interact">
-                                        <button class="like button-"><img src="../assets/images/like.png" alt=""></button>
-                                        <button class="comment"><img src="../assets/images/comment.png" alt=""></button>
-                                        <button class="save"><img src="../assets/images/save.png" alt=""></button>
-                                        <button class="report"><img src="../assets/images/report.png" alt=""></button>
+                                        <button class="like button-">
+                                            <img src="../assets/images/like.png" alt="">
+                                        </button>
+                                        <button class="comment">
+                                            <img src="../assets/images/comment.png" alt="">
+                                        </button>
+                                        <button class="save">
+                                            <img src="../assets/images/save.png" alt="">
+                                        </button>
+                                        <button class="edit">
+                                            <img src="../assets/images/edit.png" alt="">
+                                        </button>
+                                        <button class="delete">
+                                            <img src="../assets/images/delete.png" alt="">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
