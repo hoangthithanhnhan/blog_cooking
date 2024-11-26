@@ -1,0 +1,50 @@
+:root {
+    --main: #085979;
+    --yellow:#ffcc00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-weight: 400;
+    color: var(--body);
+}
+header{
+    margin-bottom: 10px;
+}
+header .navbar {
+    background-color:var(--main) !important;
+}
+header .navbar .navbar-brand img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+header .navbar .user_name{
+    color: aliceblue;
+    font-style: italic;
+    font-size: 18px;
+}
+header .navbar .user_name img{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+header .btn{
+    border-color: white;
+    color:white;
+    width: 150px;
+}
+main .card{
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 10px;
+}
+main .img_monan{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
