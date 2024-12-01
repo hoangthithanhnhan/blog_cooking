@@ -19,32 +19,73 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
                 </form>
+                <a class="navbar-brand user_name" href="#">Nguyet Anh<img src="../assets/images/profile-user.png" alt=""></a>
             </div>
         </nav>
     </header>
     <main>
         <div class="container">
-            <div class="form_dangnhap">
-                <h4 class="title">ĐĂNG NHẬP</h4>
-                <form class="row row-cols-lg-auto g-3 align-items-center">
-                    <div class="col-12">
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nhập số điện thoại">
+            <div class="row">
+                <div class="col-3">
+                    <div class="side-bar d-flex flex-column flex-shrink-0 p-3" style="width: 280px;">
+                        <ul class="nav nav-pills flex-column mb-auto">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>Trang chủ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-white">
+                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>Thêm bài viết
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-white">
+                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>Thông báo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-white">
+                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>Quản lý bài viết
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-white">
+                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>Bài viết đã lưu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-white">
+                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>Đăng xuất
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-12">
-                        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Nhập mật khẩu">
+                </div>
+                <div class="col dangnhap">
+                    <div class="form_dangnhap">
+                        <h4 class="title">ĐĂNG NHẬP</h4>
+                        <form class="row row-cols-lg-auto g-3 align-items-center">
+                            <div class="col-12">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nhập số điện thoại">
+                            </div>
+                            <div class="col-12">
+                                <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Nhập mật khẩu">
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                                    <label class="form-check-label" for="inlineFormCheck">
+                                        Nhớ mật khẩu?
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="" class="btn btn-primary">Đăng nhập</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-                            <label class="form-check-label" for="inlineFormCheck">
-                                Nhớ mật khẩu?
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <button type="" class="btn btn-primary">Đăng nhập</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </main>

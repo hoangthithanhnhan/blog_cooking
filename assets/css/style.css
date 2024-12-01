@@ -3,6 +3,7 @@
     --yellow:#ffcc00;
     --blue:#2091bc;
     --white:#ECEBEA;
+    --red:#D4343F;
 }
 *{
     margin: 0;
@@ -18,6 +19,11 @@ header{
     top:0;
     width: 100%;
     z-index: 100;
+}
+.side-bar ul li:not(:last-of-type) {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #000;
 }
 header .navbar {
     background-color:var(--main) !important;
@@ -106,4 +112,16 @@ main .button-interact button img{
 main .button-interact .like img{
     width: 27px;
     height: 27px;
+}
+
+main #comment .modal-dialog .modal-body .dis_comment{
+    max-height: 300px;
+}
+main #comment .modal-dialog .modal-footer{
+    width: 100%;
+    justify-content: center;
+
+}
+.modal-footer>* {
+    width: 100%;
 }
